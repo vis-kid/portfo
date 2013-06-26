@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>StartupDna</title>
+<%= stylesheet_link_tag    "application", :media => "all" %>
+<%= javascript_include_tag "application" %>
+<%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="border-top"></div>
+  <div class="content">
+
+    <div class="first-line">
+      <h1 class="logo-text"><a>smashbot</a></h1>
+        <ul class="blog-tags">
+          <li><h5><a>apprentice.io</a></h5></li>
+          <li><h5><a>design</a></h5></li>
+          <li><h5><a>checklist</a></h5></li>
+        </ul>
+    </div>
+    
+    <div class="second-line">
+      <div class="logo-background">
+      <%= image_tag "smashbot-logo.png", :class => "logo-icon" %>
+      </div>
+      <h2 class="title">How to become a design apprentice</h2>
+      <h3 class="subtitle">Checklist for future apprentices</h3>
+      <h6 class="blogger-name"><a>ed wassermann</a></h6>
+    </div>
+    
+    <div class="third-line">
+      <h5 class="date">06/10/2013</h5>
+      <p class="blog-text"><span class="capital_letter">A</span>pplying for the <span class="italics"><a>design apprenticeship</a></span> was certainly the best decision for becoming a better craftsman. The high value <span class="italics">smashbot</span> puts into learning and educating each other creates an excellent environment for expanding your
+      knowledge and to professionalize your skills. </p>
+    </div>
+
+      <%= yield %>
+    </div>
+</body>
+</html>

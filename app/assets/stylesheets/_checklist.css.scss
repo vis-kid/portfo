@@ -1,0 +1,199 @@
+@import "bourbon";
+@import "grid-settings";
+@import "neat";
+@import "fontfaces";
+
+// *************** VARIABLES ***********
+
+// *************** COLORS **************
+
+$red: #B7201B; 
+$grey_text: #343434;
+
+
+
+//****************** STYLING **************
+//*****************************************
+
+
+//****************** LINKS ****************
+
+a {
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+   
+}
+
+.logo-text a {
+  &:hover {
+    color: rgba($grey_text, .88);
+    text-decoration: none;
+  }
+}
+
+span a {
+  color: $red;
+}
+
+//****************** HEADINGS *************
+
+h1 {
+  font-family: Impact; 
+  font-weight: normal; 
+  font-size: 72px;
+  color: $grey_text;
+}
+
+h2 {
+  font-family: Source Sans Pro;
+  font-weight: 800;
+  font-size: 53px;
+  color: $grey_text;
+}
+
+h3 {
+  font-family: Source Sans Pro;
+  font-weight: 300;
+  font-size: 40px;
+  color: $red;
+}
+
+h5, .blogger-name {
+  font-family: Source Sans Pro;
+  font-weight: 200;
+  font-size: 25px;
+  font-style: italic;
+  color: $red;
+}
+
+.border-top {
+  background-color: $red;
+  height: 7px;
+}
+
+.content {
+  @include outer-container;
+}
+
+.logo-text, .blog-tags, .title, .subtitle, .blogger-name, .blog-text {
+  padding-left: 10px;
+}
+
+
+
+//******************** PARAGRAPHS ************
+
+p {
+  font-family: 'DroidSerif';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 25px;
+  color: $grey_text;
+}
+
+.capital_letter {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.italics {
+  font-style: italic;
+}
+
+
+// *********** CONTENT LINES *********
+
+// *********** FIRST LINE ************
+
+.first-line {
+  @include outer-container;
+}
+
+.blog-tags {
+  @include span-columns(9);
+  margin-top: 102px;
+  li {
+    float: left;
+    padding-right: 50px;
+  }
+}
+
+.logo-text, .logo-icon, .date {
+  @include span-columns(3);
+  text-align: center;
+  clear: both;
+  margin-top: 55px;
+}
+
+.logo-text {
+  padding-right: 20px;;
+}
+
+//*********** SECOND LINE ************
+
+.second-line {
+  @include outer-container;
+}
+
+.logo-background {
+  @include span-columns(3);
+}
+
+.logo-icon {
+  @include span-columns(3);
+  margin-top: 50px;
+  margin-bottom: 30px;
+  height: 149px;
+  width: 149px;
+  margin-left: 83px;
+}
+
+.title, .subtitle, .blogger-name {
+  @include span-columns(8);
+  line-height: 1.5em;
+}
+
+.blogger-name, .title, .subtitle {
+  color: $grey_text;
+}
+
+.title {
+  margin-top: 65px;
+}
+
+.subtitle {
+ line-height: 0.5em;
+ margin-bottom: 0.5em;
+ color: $red;
+}
+
+.blogger-name {
+  color: #454545;
+}
+
+
+
+//************** THIRD LINE ***********
+
+.third-line {
+  @include outer-container;
+}
+
+.blog-text {
+  @include span-columns(7);
+  line-height: 1.5em;
+  padding-top: 1.5em;
+}
+
+.date {
+  margin-top: 50px;
+}
+
+
+
+
+
+
+  
