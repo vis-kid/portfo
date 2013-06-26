@@ -50,32 +50,38 @@ h1 {
   color: $grey_text;
 }
 
-h2 {
+h2, h3, h5, .blogger-name {
   font-family: Source Sans Pro;
+}
+
+h2 {
   font-weight: 800;
   font-size: em(53, 20);
   color: $grey_text;
 }
 
 h3 {
-  font-family: Source Sans Pro;
   font-weight: 300;
   font-size: em(40, 20);
   color: $red;
 }
 
 h5, .blogger-name {
-  font-family: Source Sans Pro;
   font-weight: 200;
   font-size: em(25, 20);
   font-style: italic;
   color: $red;
 }
 
+
+//****************** BORDERS *****************
+
 .border-top {
   background-color: $red;
   height: 7px;
 }
+
+
 
 .content {
   @include outer-container;
