@@ -3,9 +3,9 @@
 @import "neat";
 @import "fontfaces";
 
-// *************** VARIABLES ***********
+// *************** VARIABLES **************
 
-// *************** COLORS **************
+// *************** COLORS *****************
 
 $red: #B7201B; 
 $grey_text: #343434;
@@ -39,31 +39,35 @@ span a {
 
 //****************** HEADINGS *************
 
+body {
+  font-size: 100%;
+}
+
 h1 {
   font-family: Impact; 
   font-weight: normal; 
-  font-size: 72px;
+  font-size: em(72, 20);
   color: $grey_text;
 }
 
 h2 {
   font-family: Source Sans Pro;
   font-weight: 800;
-  font-size: 53px;
+  font-size: em(53, 20);
   color: $grey_text;
 }
 
 h3 {
   font-family: Source Sans Pro;
   font-weight: 300;
-  font-size: 40px;
+  font-size: em(40, 20);
   color: $red;
 }
 
 h5, .blogger-name {
   font-family: Source Sans Pro;
   font-weight: 200;
-  font-size: 25px;
+  font-size: em(25, 20);
   font-style: italic;
   color: $red;
 }
@@ -85,17 +89,17 @@ h5, .blogger-name {
 
 //******************** PARAGRAPHS ************
 
-p {
+.blog-text {
   font-family: 'DroidSerif';
   font-weight: normal;
   font-style: normal;
-  font-size: 25px;
+  font-size: em(25, 20);
   color: $grey_text;
 }
 
 .capital_letter {
   font-weight: 700;
-  font-size: 40px;
+  font-size: em(40, 20);
 }
 
 .italics {
@@ -190,10 +194,3 @@ p {
 .date {
   margin-top: 50px;
 }
-
-
-
-
-
-
-  
