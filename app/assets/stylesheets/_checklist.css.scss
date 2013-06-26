@@ -147,10 +147,13 @@ h5, .blogger-name {
 
 .second-line {
   @include outer-container;
+  z-index: 2;
+  position: absolute;
 }
 
 .logo-background {
   @include span-columns(3);
+  padding-bottom: 150px;
 }
 
 .logo-icon {
@@ -191,6 +194,9 @@ h5, .blogger-name {
 
 .third-line {
   @include outer-container;
+  z-index: 2;
+  position: relative;
+  margin-top: 230px;
 }
 
 .blog-text {
