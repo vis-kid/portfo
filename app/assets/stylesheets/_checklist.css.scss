@@ -165,6 +165,17 @@ h5, .blogger-name {
   margin-left: 83px;
 }
 
+.homer-background {
+  @include outer-container;
+  padding-top: 30px;
+}
+
+.homer-icon {
+  @include span-columns(4);
+  @include shift(3);
+  padding-left: 10px;
+}
+
 .title, .subtitle, .blogger-name {
   @include span-columns(8);
   line-height: 1.5em;
