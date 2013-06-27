@@ -55,7 +55,7 @@ h2, h3, h5, .blogger-name {
 }
 
 h2 {
-  font-weight: 800;
+  font-weight: 700;
   font-size: em(53, 20);
   color: $grey_text;
   letter-spacing: -0.05em; 
@@ -83,14 +83,22 @@ h5, .blogger-name {
   height: 7px;
 }
 
-
+.border-bottom {
+  background-color: $red;
+  height: 22px;
+  margin-top: 180px;
+}
 
 .content {
   @include outer-container;
 }
 
-.logo-text, .blog-tags, .title, .subtitle, .blogger-name, .blog-text {
+.blog-tags, .title, .subtitle, .blogger-name, .blog-text {
   padding-left: 10px;
+}
+
+.logo-text {
+  padding-left: 15px;
 }
 
 
@@ -106,6 +114,7 @@ h5, .blogger-name {
 }
 
 .capital_letter {
+  font-family: Source Sans Pro;
   font-weight: 700;
   font-size: em(40, 20);
 }
@@ -114,6 +123,15 @@ h5, .blogger-name {
   font-style: italic;
 }
 
+.copyright {
+  @include outer-container;
+  @include span-columns(8);
+  @include shift(2);
+  font-family: Source Sans Pro;
+  color: white;
+  font-size: 2px;
+  padding-top: 1px;
+}
 
 // *********** CONTENT LINES *********
 
@@ -124,7 +142,7 @@ h5, .blogger-name {
 }
 
 .blog-tags {
-  @include span-columns(9);
+  @include span-columns(8);
   margin-top: 102px;
   li {
     float: left;
@@ -133,7 +151,7 @@ h5, .blogger-name {
 }
 
 .logo-text, .logo-icon, .date {
-  @include span-columns(3);
+  @include span-columns(4);
   text-align: center;
   clear: both;
   margin-top: 55px;
@@ -152,17 +170,17 @@ h5, .blogger-name {
 }
 
 .logo-background {
-  @include span-columns(3);
+  @include span-columns(4);
   padding-bottom: 150px;
 }
 
 .logo-icon {
-  @include span-columns(3);
+  @include span-columns(4);
   margin-top: 50px;
   margin-bottom: 30px;
   height: 149px;
   width: 149px;
-  margin-left: 83px;
+  margin-left: 138px;
 }
 
 .homer-background {
@@ -172,12 +190,12 @@ h5, .blogger-name {
 
 .homer-icon {
   @include span-columns(4);
-  @include shift(3);
+  @include shift(4);
   padding-left: 10px;
 }
 
 .title, .subtitle, .blogger-name {
-  @include span-columns(8);
+  @include span-columns(7);
   line-height: 1.5em;
 }
 
@@ -218,4 +236,62 @@ h5, .blogger-name {
 
 .date {
   margin-top: 50px;
+}
+
+
+
+//*************** FOURTH BLOCK **********
+
+.fourth-block {
+  margin-top: 50px;
+}
+
+.wrapper {
+  @include outer-container;
+  margin-bottom: 35px;
+}
+
+.check-ordinals {
+  @include span-columns(4);
+  text-align: left;
+  padding-left: 214px;
+}
+
+.check-lines {
+  @include span-columns(8);
+}
+
+.check-ordinals, .list {
+  font-size: em(25, 20);
+}
+
+.ordinals, .list {
+  font-family: 'DroidSerif'; 
+}
+
+.ordinals, .ordinal-letter, .list {
+  color: $grey_text;
+}
+
+.list {
+  padding-left: 10px;
+  padding-top: 6px;
+}
+
+li.ordinals {
+  font-weight: 100;
+  font-size: em(15, 20);
+  letter-spacing: 0.05em;
+  color: tint($grey_text, 25%);
+}
+
+.ordinal-letter {
+  font-family: Source Sans Pro;
+  font-size: em(36, 20);
+  font-weight: 700;
+  padding-right: 2px;
+}
+
+strong {
+  font-weight: bold;
 }
