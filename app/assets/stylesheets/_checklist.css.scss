@@ -197,7 +197,7 @@ h5, .blogger-name {
 .homer-icon {
   @include span-columns(4);
   @include shift(4);
-  padding-left: 10px;
+  padding-left: 12px;
 }
 
 .title, .subtitle, .blogger-name {
@@ -265,7 +265,7 @@ h5, .blogger-name {
 
 .check-lines {
   @include span-columns(8);
-  margin-left: -9px;
+  margin-left: -11px;
 }
 
 .check-ordinals, .list {
