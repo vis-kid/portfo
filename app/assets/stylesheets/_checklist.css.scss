@@ -126,11 +126,17 @@ h5, .blogger-name {
 .copyright {
   @include outer-container;
   @include span-columns(8);
-  @include shift(2);
+  @include shift(1.9);
   font-family: Source Sans Pro;
   color: white;
   font-size: 2px;
-  padding-top: 1px;
+  padding-top: 3px;
+}
+
+.red-line {
+  margin-left: -50px;
+  padding-right: 20px;
+  padding-bottom: 6px;
 }
 
 // *********** CONTENT LINES *********
@@ -185,7 +191,7 @@ h5, .blogger-name {
 
 .homer-background {
   @include outer-container;
-  padding-top: 30px;
+  margin-top: 45px;
 }
 
 .homer-icon {
@@ -243,7 +249,7 @@ h5, .blogger-name {
 //*************** FOURTH BLOCK **********
 
 .fourth-block {
-  margin-top: 50px;
+  margin-top: 45px;
 }
 
 .wrapper {
@@ -259,10 +265,11 @@ h5, .blogger-name {
 
 .check-lines {
   @include span-columns(8);
+  margin-left: -9px;
 }
 
 .check-ordinals, .list {
-  font-size: em(25, 20);
+  font-size: em(28, 20);
 }
 
 .ordinals, .list {
