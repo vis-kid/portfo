@@ -111,7 +111,6 @@ h5, .blogger-name {
 }
 
 .logo-text {
-  padding-left: 15px;
 }
 
 
@@ -161,7 +160,8 @@ h5, .blogger-name {
 }
 
 .blog-tags {
-  @include span-columns(8);
+  @include span-columns(7);
+  @include shift(.39);
   margin-top: 102px;
   li {
     float: left;
@@ -171,13 +171,12 @@ h5, .blogger-name {
 
 .logo-text, .logo-icon, .date {
   @include span-columns(4);
-  text-align: center;
-  clear: both;
   margin-top: 55px;
 }
 
 .logo-text {
-  padding-right: 20px;;
+  @include span-columns(3);
+  @include shift(0.6);
 }
 
 //*********** SECOND LINE ************
@@ -194,8 +193,7 @@ h5, .blogger-name {
 }
 
 .logo-icon {
-  @include span-columns(4);
-  @include shift(3.8);
+  @include shift(3.9);
   margin-top: 50px;
   margin-bottom: 30px;
   height: 149px;
@@ -223,7 +221,7 @@ h5, .blogger-name {
 }
 
 .title {
-  margin-top: 65px;
+  margin-top: 61px;
 }
 
 .subtitle {
@@ -254,7 +252,9 @@ h5, .blogger-name {
 }
 
 .date {
+  @include span-columns(4);
   margin-top: 50px;
+  text-align: center;
 }
 
 
@@ -271,9 +271,9 @@ h5, .blogger-name {
 }
 
 .check-ordinals {
-  @include span-columns(4);
+  @include span-columns(2);
+  @include shift(1.8);
   text-align: left;
-  padding-left: 214px;
 }
 
 .check-lines {
@@ -293,7 +293,9 @@ h5, .blogger-name {
   color: $grey_text;
 }
 
+
 .list {
+  @include shift(0.31);
   padding-left: 10px;
   padding-top: 6px;
 }
