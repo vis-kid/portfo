@@ -57,7 +57,7 @@ body {
 }
 
 h1 {
-  font-family: Impact; 
+  font-family: Impact, Source Sans Pro; 
   font-weight: normal; 
   font-size: em(72, 20);
   color: $grey_text;
@@ -142,7 +142,7 @@ h5, .blogger-name {
   @include shift(1.9);
   font-family: Source Sans Pro;
   color: white;
-  font-size: 2px;
+  font-size: em(16, 20);
   padding-top: 3px;
 }
 
