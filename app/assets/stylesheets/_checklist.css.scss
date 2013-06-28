@@ -18,18 +18,31 @@ $grey_text: #343434;
 
 //****************** LINKS ****************
 
-a {
+.blog-tags a {
   &:hover {
-    text-decoration: underline;
     cursor: pointer;
+    border-bottom: solid 1px $red;
   }
-   
+}
+
+.blogger-name a {
+  &:hover {
+    cursor: pointer;
+    border-bottom: solid 1px $grey_text;
+  }
 }
 
 .logo-text a {
   &:hover {
     color: rgba($grey_text, .88);
     text-decoration: none;
+  }
+}
+
+.italics a {
+  &:hover {
+    cursor: pointer;
+    border-bottom: solid 1px $red;
   }
 }
 
@@ -301,4 +314,18 @@ li.ordinals {
 
 strong {
   font-weight: bold;
+}
+
+.list a {
+  color: $grey_text;
+  text-decoration: none;
+  &:hover {
+    border-bottom: solid 2px $grey_text;
+  }
+  &:visited {
+    color: tint($grey_text, 35%);
+    &:hover {
+      border-bottom: solid 2px tint($grey_text, 35%);
+    }
+  }
 }
