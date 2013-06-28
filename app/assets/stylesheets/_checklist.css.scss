@@ -195,11 +195,11 @@ h5, .blogger-name {
 
 .logo-icon {
   @include span-columns(4);
+  @include shift(3.8);
   margin-top: 50px;
   margin-bottom: 30px;
   height: 149px;
   width: 149px;
-  margin-left: 138px;
 }
 
 .homer-background {
