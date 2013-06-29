@@ -18,32 +18,25 @@ $grey_text: #343434;
 
 //****************** LINKS ****************
 
-.blog-tags a {
-  &:hover {
+.blog-tags a:hover {
     cursor: pointer;
     border-bottom: solid 1px $red;
-  }
 }
 
-.blogger-name a {
-  &:hover {
+.blogger-name a:hover {
     cursor: pointer;
     border-bottom: solid 1px $grey_text;
-  }
 }
 
-.logo-text a {
-  &:hover {
+.logo-text a:hover { 
     color: rgba($grey_text, .88);
     text-decoration: none;
-  }
+  
 }
 
-.italics a {
-  &:hover {
+.italics a:hover {
     cursor: pointer;
     border-bottom: solid 1px $red;
-  }
 }
 
 span a {
