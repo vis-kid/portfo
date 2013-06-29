@@ -12,6 +12,16 @@ $grey_text: #343434;
 
 
 
+//****************** MIXINS ***************
+
+@mixin header($weight, $size, $color) {
+  font-weight: $weight;
+  font-size: $size;
+  color: $color;
+}
+
+
+
 //****************** STYLING **************
 //*****************************************
 
@@ -49,36 +59,28 @@ body {
   font-size: 100%;
 }
 
-h1 {
-  font-family: Impact, Source Sans Pro; 
-  font-weight: normal; 
-  font-size: em(72, 20);
-  color: $grey_text;
-}
-
 h2, h3, h5, .blogger-name {
   font-family: Source Sans Pro;
 }
 
+h1 {
+  font-family: Impact, Source Sans Pro; 
+  @include header(normal, em(72, 20), $grey_text);
+}
+
 h2 {
-  font-weight: 700;
-  font-size: em(53, 20);
-  color: $grey_text;
+  @include header(700, em(53, 20), $grey_text);
   letter-spacing: -0.05em; 
 }
 
 h3 {
-  font-weight: 300;
-  font-size: em(40, 20);
+  @include header(300, em(40, 20), $red);
   letter-spacing: -0.04em;
-  color: $red;
 }
 
 h5, .blogger-name {
-  font-weight: 200;
-  font-size: em(25, 20);
+  @include header(200, em(25, 20), $red);
   font-style: italic;
-  color: $red;
 }
 
 
