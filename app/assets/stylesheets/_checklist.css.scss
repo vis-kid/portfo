@@ -20,6 +20,11 @@ $grey_text: #343434;
   color: $color;
 }
 
+@mixin bar($height, $color: $red) {
+  height: $height;
+  background-color: $color;
+}
+
 
 
 //****************** STYLING **************
@@ -87,13 +92,33 @@ h5, .blogger-name {
 //****************** TOP *******************
 
 .border-top {
-  background-color: $red;
-  height: 7px;
+  @include bar(7px);
 }
 
 .content {
   @include outer-container;
 }
+
+
+
+//******************** BOTTOM *****************
+
+.border-bottom {
+  @include bar(22px);
+  margin-top: 180px;
+}
+
+.copyright {
+  @include outer-container;
+  @include span-columns(8);
+  @include shift(1.9);
+  font-family: Source Sans Pro;
+  font-size: em(16, 20);
+  padding-top: 3px;
+  color: white;
+}
+
+
 
 
 //******************* MISC ******************
@@ -121,26 +146,6 @@ h5, .blogger-name {
 
 .italics {
   font-style: italic;
-}
-
-
-
-//******************** BOTTOM *****************
-
-.border-bottom {
-  background-color: $red;
-  height: 22px;
-  margin-top: 180px;
-}
-
-.copyright {
-  @include outer-container;
-  @include span-columns(8);
-  @include shift(1.9);
-  font-family: Source Sans Pro;
-  font-size: em(16, 20);
-  padding-top: 3px;
-  color: white;
 }
 
 
