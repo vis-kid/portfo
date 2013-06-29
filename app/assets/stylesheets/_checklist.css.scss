@@ -70,21 +70,21 @@ h2, h3, h5, .blogger-name {
 
 h1 {
   font-family: Impact, Source Sans Pro; 
-  @include header(normal, em(72, 20), $grey_text);
+  @include header($weight: normal, $size: em(72, 20), $color: $grey_text);
 }
 
 h2 {
-  @include header(700, em(53, 20), $grey_text);
+  @include header($weight: 700, $size: em(53, 20), $color: $grey_text);
   letter-spacing: -0.05em; 
 }
 
 h3 {
-  @include header(300, em(40, 20), $red);
+  @include header($weight: 300, $size: em(40, 20), $color: $red);
   letter-spacing: -0.04em;
 }
 
 h5, .blogger-name {
-  @include header(200, em(25, 20), $red);
+  @include header($weight: 200, $size: em(25, 20), $color: $red);
   font-style: italic;
 }
 
@@ -92,7 +92,7 @@ h5, .blogger-name {
 //****************** TOP *******************
 
 .border-top {
-  @include bar(7px);
+  @include bar($height: 7px);
 }
 
 .content {
@@ -101,10 +101,11 @@ h5, .blogger-name {
 
 
 
+
 //******************** BOTTOM *****************
 
 .border-bottom {
-  @include bar(22px);
+  @include bar($height: 22px);
   margin-top: 180px;
 }
 
