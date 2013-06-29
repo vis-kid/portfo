@@ -82,22 +82,19 @@ h5, .blogger-name {
 }
 
 
-//****************** BORDERS *****************
+//****************** TOP *******************
 
 .border-top {
   background-color: $red;
   height: 7px;
 }
 
-.border-bottom {
-  background-color: $red;
-  height: 22px;
-  margin-top: 180px;
-}
-
 .content {
   @include outer-container;
 }
+
+
+//******************* MISC ******************
 
 .blog-tags, .title, .subtitle, .blogger-name, .blog-text {
   padding-left: 10px;
@@ -105,12 +102,11 @@ h5, .blogger-name {
 
 
 
-//******************** PARAGRAPHS ************
+//******************** PARAGRAPH ************
 
 .blog-text {
   font-family: 'DroidSerif',Georgia, Cambria, Serif;
   font-weight: normal;
-  font-style: normal;
   font-size: em(25, 20);
   color: $grey_text;
 }
@@ -125,23 +121,31 @@ h5, .blogger-name {
   font-style: italic;
 }
 
+
+
+//******************** BOTTOM *****************
+
+.border-bottom {
+  background-color: $red;
+  height: 22px;
+  margin-top: 180px;
+}
+
 .copyright {
   @include outer-container;
   @include span-columns(8);
   @include shift(1.9);
   font-family: Source Sans Pro;
-  color: white;
   font-size: em(16, 20);
   padding-top: 3px;
+  color: white;
 }
 
-.red-line {
-  margin-left: -50px;
-  padding-right: 20px;
-  padding-bottom: 6px;
-}
+
 
 // *********** CONTENT LINES *********
+//************************************
+
 
 // *********** FIRST LINE ************
 
@@ -151,7 +155,7 @@ h5, .blogger-name {
 
 .blog-tags {
   @include span-columns(7);
-  @include shift(.39);
+  @include shift(.42);
   margin-top: 102px;
   li {
     float: left;
@@ -210,7 +214,7 @@ h5, .blogger-name {
 }
 
 .blogger-name {
-  color: #454545;
+  color: $grey_text;
 }
 
 
@@ -268,16 +272,11 @@ h5, .blogger-name {
 .check-ordinals {
   @include span-columns(2);
   @include shift(1.8);
-  text-align: left;
 }
 
 .check-lines {
   @include span-columns(8);
   margin-left: -11px;
-}
-
-.check-ordinals, .list {
-  font-size: em(28, 20);
 }
 
 .ordinals, .list {
@@ -288,16 +287,16 @@ h5, .blogger-name {
   color: $grey_text;
 }
 
-
 .list {
   @include shift(0.31);
+  font-size: em(28, 20);
   padding-left: 10px;
   padding-top: 6px;
 }
 
 li.ordinals {
   font-weight: 100;
-  font-size: em(15, 20);
+  font-size: em(20, 20);
   letter-spacing: 0.05em;
   color: tint($grey_text, 25%);
 }
@@ -311,6 +310,12 @@ li.ordinals {
 
 strong {
   font-weight: bold;
+}
+
+.red-line {
+  margin-left: -50px;
+  padding-right: 20px;
+  padding-bottom: 6px;
 }
 
 .list a {
