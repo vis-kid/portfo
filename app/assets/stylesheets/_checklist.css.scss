@@ -85,9 +85,6 @@ h1 {
   @include media(max-width 1275px) {
     @include header($weight: normal, $size: em(60, 20), $color: $grey_text);
   }
-  @include media(max-width 1000px) {
-    @include header($weight: normal, $size: em(72, 20), $color: $grey_text);
-  }
 }
 
 h2 {
@@ -199,6 +196,7 @@ h5, .blogger-name {
   }
   @include media(max-width 1000px) {
     @include span-columns(11);
+    margin-top: 40px;
     padding-right: 30px;
   }
 }
@@ -215,11 +213,30 @@ h5, .blogger-name {
     @include span-columns(3);
   }
   @include media(max-width 1000px) {
-    @include span-columns(12);
+    @include span-columns(7);
     text-align: left;
-    padding-left: 10px;
+    margin-top: 76px;
+    margin-left: -10px;
   }
 }
+
+.small-logo-background {
+  @include span-columns(3);
+}
+
+.small-logo {
+  @include span-columns(3);
+  @include shift(.55);
+  display: none;
+  @include media(max-width 1000px) {
+    display: inline;
+    img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+}
+
 
 //*********** SECOND LINE ************
 
