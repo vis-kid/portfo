@@ -112,15 +112,12 @@ h5, .blogger-name {
 
 .copyright {
   @include outer-container;
-  @include span-columns(8);
-  @include shift(1.9);
+  @include span-columns(12);
   font-family: Source Sans Pro;
   font-size: em(16, 20);
+  text-align: center;
   padding-top: 3px;
   color: white;
-  @include media(max-width 1350px) {
-    @include shift(1.35);
-  }
 }
 
 

@@ -1,8 +1,20 @@
+// @font-face {
+//   font-family: Impact;
+//   font-weight:bold;
+//   src: url('http://grozav.com/font/impact.ttf');
+//   src: url('http://www.grozav.com/font/impact.ttf');
+// }
+
 @font-face {
-  font-family: Impact;
-  font-weight:bold;
-  src: url('http://grozav.com/font/impact.ttf');
-  src: url('http://www.grozav.com/font/impact.ttf');
+    font-family: 'impactregular';
+    src: url('impact-webfont.eot');
+    src: url('impact-webfont.eot?#iefix') format('embedded-opentype'),
+         url('impact-webfont.woff') format('woff'),
+         url('impact-webfont.ttf') format('truetype'),
+         url('impact-webfont.svg#impactregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 @font-face {
