@@ -7,8 +7,8 @@
 
 @font-face {
     font-family: 'impactregular';
-    src: url('impact-webfont.eot'),
-         url('impact-webfont.eot?#iefix') format('embedded-opentype'),
+    src: url('impact-webfont.eot');
+    src: url('impact-webfont.eot?#iefix') format('embedded-opentype'),
          url('impact-webfont.woff') format('woff'),
          url('impact-webfont.ttf') format('truetype'),
          url('impact-webfont.svg#impactregular') format('svg');
@@ -17,42 +17,75 @@
 
 }
 
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 300;
-  src: url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v4/toadOcfmlt9b38dHJxOBGBlTL9oEQvYTI0YAW1-Ysv0.eot);
-  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v4/toadOcfmlt9b38dHJxOBGBlTL9oEQvYTI0YAW1-Ysv0.eot) format('embedded-opentype'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v4/toadOcfmlt9b38dHJxOBGNbE_oMaV8t2eFeISPpzbdE.woff) format('woff');
-}
-
-@font-face {
-  font-family: 'DroidSerifRegular';
-  font-weight: normal;
-  font-style: normal;
-
-  src: url('DroidSerif-Regular-webfont.eot');
-  src: url('DroidSerif-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-  url('DroidSerif-Regular-webfont.woff') format('woff'),
-  url('DroidSerif-Regular-webfont.ttf') format('truetype'),
-  url('DroidSerif-Regular-webfont.svg#DroidSerifRegular') format('svg');
-    
-}
-
+// @font-face {
+//   font-family: 'Source Sans Pro';
+//   font-style: normal;
+//   font-weight: 300;
+//   src: url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v4/toadOcfmlt9b38dHJxOBGBlTL9oEQvYTI0YAW1-Ysv0.eot);
+//   src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v4/toadOcfmlt9b38dHJxOBGBlTL9oEQvYTI0YAW1-Ysv0.eot) format('embedded-opentype'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v4/toadOcfmlt9b38dHJxOBGNbE_oMaV8t2eFeISPpzbdE.woff) format('woff');
+// }
 
 
 @font-face {
-    font-family: 'SourceSansProLight';
-    src: url('SourceSansPro-Light-webfont.eot');
-    src: url('SourceSansPro-Light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('SourceSansPro-Light-webfont.woff') format('woff'),
-         url('SourceSansPro-Light-webfont.ttf') format('truetype'),
-         url('SourceSansPro-Light-webfont.svg#SourceSansProLight') format('svg');
+    font-family: 'source_sans_proregular';
+    src: url('sourcesanspro-regular-webfont-webfont.eot');
+    src: url('sourcesanspro-regular-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sourcesanspro-regular-webfont-webfont.woff') format('woff'),
+         url('sourcesanspro-regular-webfont-webfont.ttf') format('truetype'),
+         url('sourcesanspro-regular-webfont-webfont.svg#source_sans_proregular') format('svg');
     font-weight: normal;
     font-style: normal;
+
 }
 
+// @font-face {
+//   font-family: 'DroidSerifRegular';
+//   font-weight: normal;
+//   font-style: normal;
+
+//   src: url('DroidSerif-Regular-webfont.eot');
+//   src: url('DroidSerif-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+//   url('DroidSerif-Regular-webfont.woff') format('woff'),
+//   url('DroidSerif-Regular-webfont.ttf') format('truetype'),
+//   url('DroidSerif-Regular-webfont.svg#DroidSerifRegular') format('svg');
+    
+// }
+
+@font-face {
+    font-family: 'droid_serifregular';
+    src: url('droidserif-regular-webfont-webfont.eot');
+    src: url('droidserif-regular-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('droidserif-regular-webfont-webfont.woff') format('woff'),
+         url('droidserif-regular-webfont-webfont.ttf') format('truetype'),
+         url('droidserif-regular-webfont-webfont.svg#droid_serifregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+// @font-face {
+//     font-family: 'SourceSansProLight';
+//     src: url('SourceSansPro-Light-webfont.eot');
+//     src: url('SourceSansPro-Light-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('SourceSansPro-Light-webfont.woff') format('woff'),
+//          url('SourceSansPro-Light-webfont.ttf') format('truetype'),
+//          url('SourceSansPro-Light-webfont.svg#SourceSansProLight') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
 
 
+@font-face {
+    font-family: 'source_sans_prolight';
+    src: url('sourcesanspro-light-webfont-webfont.eot');
+    src: url('sourcesanspro-light-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sourcesanspro-light-webfont-webfont.woff') format('woff'),
+         url('sourcesanspro-light-webfont-webfont.ttf') format('truetype'),
+         url('sourcesanspro-light-webfont-webfont.svg#source_sans_prolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 
 
