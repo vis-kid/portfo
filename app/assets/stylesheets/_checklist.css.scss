@@ -84,6 +84,7 @@ h1 {
   }
   @include media(max-width 1275px) {
     @include header($weight: normal, $size: em(60, 20), $color: $grey_text);
+    padding-top: 13px;
   }
 }
 
@@ -98,6 +99,9 @@ h2 {
 h3 {
   @include header($weight: 300, $size: em(40, 20), $color: $red);
   letter-spacing: -0.04em;
+  @include media(max-width 1275px) {
+    @include header($weight: 300, $size: em(35, 20), $color: $red);
+  }
 }
 
 h5, .blogger-name {
@@ -154,9 +158,6 @@ h5, .blogger-name {
   font-weight: normal;
   font-size: em(25, 20);
   color: $grey_text;
-  @include media(max-width 1000px) {
-    font-size: em(22, 20);
-  }
 }
 
 .capital_letter {
@@ -181,6 +182,9 @@ h5, .blogger-name {
   @include outer-container;
   @include media(max-width 1000px) {
     @include shift(2);
+  }
+  @include media(max-width 855px) {
+    @include shift(1);
   }
 }
 
@@ -215,7 +219,7 @@ h5, .blogger-name {
   @include media(max-width 1000px) {
     @include span-columns(7);
     text-align: left;
-    margin-top: 76px;
+    margin-top: 67px;
     margin-left: -10px;
   }
 }
@@ -246,7 +250,9 @@ h5, .blogger-name {
   position: absolute;
   @include media(max-width 1000px){
     @include shift(2);
-    
+  }
+  @include media(max-width 855px) {
+    @include shift(1);
   }
 }
 
@@ -322,6 +328,9 @@ h5, .blogger-name {
     @include span-columns(5);
     @include shift(2);
   }
+  @include media(max-width 855px) {
+    @include shift(1);
+  }
 }
 
 
@@ -334,6 +343,9 @@ h5, .blogger-name {
   z-index: 2;
   position: relative;
   margin-top: 230px;
+  @include media(max-width 855px) {
+    @include shift(-1.17);
+  }
 }
 
 .blog-text {
@@ -356,7 +368,7 @@ h5, .blogger-name {
   @include media(max-width 1000px) {
     @include span-columns(4);
     @include shift(2);
-    margin-top: -25px;
+    margin-top: -45px;
     padding-left: 10px;
     text-align: left;
   }
@@ -371,6 +383,9 @@ h5, .blogger-name {
   @include media(max-width 1000px) {
     @include shift(.95);
     margin-top: 60px;
+  }
+  @include media(max-width 855px) {
+    @include shift(-.17);
   }
 }
 
@@ -405,7 +420,7 @@ h5, .blogger-name {
 
 .list {
   @include shift(0.31);
-  font-size: em(28, 20);
+  font-size: em(25, 20);
   padding-left: 10px;
   padding-top: 6px;
   @include media(max-width 1350px) {
@@ -416,7 +431,6 @@ h5, .blogger-name {
   }
   @include media(max-width 1000px) {
     @include shift(1.16);
-    font-size: em(22, 20)
   }
 }
 
