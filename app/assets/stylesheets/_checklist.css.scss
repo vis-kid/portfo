@@ -86,6 +86,12 @@ h1 {
     @include header($weight: normal, $size: em(60, 20), $color: $grey_text);
     padding-top: 13px;
   }
+  @include media(max-width 695px) {
+    padding-left: 50px;
+  }
+  @include media(max-width 520px) {
+    @include header($weight: normal, $size: em(50, 20), $color: $grey_text);
+  }
 }
 
 h2 {
@@ -93,6 +99,12 @@ h2 {
   letter-spacing: -0.05em; 
   @include media(max-width 1275px) {
     @include header($weight: 700, $size: em(45, 20), $color: $grey_text);
+  }
+  @include media(max-width 720px) {
+    @include header($weight: 600, $size: em(32, 20), $color: $grey_text);
+  }
+  @include media(max-width 520px) {
+    @include header($weight: 500, $size: em(31, 20), $color: $grey_text);
   }
 }
 
@@ -102,12 +114,47 @@ h3 {
   @include media(max-width 1275px) {
     @include header($weight: 300, $size: em(35, 20), $color: $red);
   }
+  @include media(max-width 720px) {
+    @include header($weight: 300, $size: em(30, 20), $color: $grey_text);
+  }
+  @include media(max-width 520px) {
+    @include header($weight: 300, $size: em(27, 20), $color: $grey_text);
+    padding-top: 10px;
+  }
 }
 
 h5, .blogger-name {
   @include header($weight: 200, $size: em(25, 20), $color: $red);
   font-style: italic;
 }
+
+.blogger-name, .date  {
+  @include media(max-width 720px) {
+    @include header($weight: 200, $size: em(20, 20), $color: $red);
+    padding-top: 20px;
+  }
+}
+
+.blog-tags {
+  @include media(max-width 600px) {
+    @include header($weight: 200, $size: em(16, 20), $color: $red);
+  }
+}
+
+.date  {
+  @include media(max-width 720px) {
+  }
+  @include media(max-width 500px) {
+    padding-top: 38px;
+  }
+}
+
+.blogger-name {
+  @include media(max-width 500px) {
+    padding-top: 10px;
+  }
+}
+
 
 
 //****************** TOP *******************
@@ -138,6 +185,11 @@ h5, .blogger-name {
   text-align: center;
   padding-top: 3px;
   color: white;
+  @include media(max-width 700px) {
+    font-size: em(5, 20);
+    background-color: $red;
+  }
+  
 }
 
 
@@ -197,6 +249,9 @@ h5, .blogger-name {
   li {
     float: left;
     padding-right: 50px;
+    @include media(max-width 600px) {
+      padding-right: 20px;
+    }
   }
   @include media(max-width 1000px) {
     @include span-columns(11);
@@ -296,6 +351,9 @@ h5, .blogger-name {
   @include media(max-width 1000px) {
     margin-top: 45px;
   }
+  @include media(max-width 500px) {
+    line-height: 1em;
+  }
 }
 
 .subtitle {
@@ -304,9 +362,6 @@ h5, .blogger-name {
  color: $red;
 }
 
-.blogger-name {
-  color: $grey_text;
-}
 
 
 
@@ -329,7 +384,14 @@ h5, .blogger-name {
     @include shift(2);
   }
   @include media(max-width 855px) {
+    @include span-columns(6);
     @include shift(1);
+  }
+  @include media(max-width 720px) {
+    @include span-columns(8);
+  }
+  @include media(max-width 500px) {
+    @include span-columns(10);
   }
 }
 
@@ -346,6 +408,9 @@ h5, .blogger-name {
   @include media(max-width 855px) {
     @include shift(-1.17);
   }
+  @include media(max-width 720px) {
+    margin-top: 200px;
+  }
 }
 
 .blog-text {
@@ -356,6 +421,10 @@ h5, .blogger-name {
     @include shift(2);
     @include span-columns(9);
     margin-top: 20px;
+  }
+  @include media(max-width 720px) {
+    font-size: em(20, 20);
+    margin-top: 0px; 
   }
 }
 
@@ -371,6 +440,9 @@ h5, .blogger-name {
     margin-top: -45px;
     padding-left: 10px;
     text-align: left;
+  }
+  @include media(max-width 500px) {
+    margin-top: -85px;
   }
 }
 
@@ -432,6 +504,19 @@ h5, .blogger-name {
   @include media(max-width 1000px) {
     @include shift(1.16);
   }
+  @include media(max-width 775px) {
+    font-size: em(22, 20);   
+  }
+  @include media(max-width 695px) {
+    font-size: em(20, 20);
+    padding-left: 8px;
+  }
+  @include media(max-width 630px) {
+    font-size: em(18, 20);
+  }
+  @include media(max-width 500px) {
+    padding-left: 16px;
+  }
 }
 
 li.ordinals {
@@ -439,6 +524,9 @@ li.ordinals {
   font-size: em(20, 20);
   letter-spacing: 0.05em;
   color: tint($grey_text, 25%);
+  @include media(max-width 500px) {
+    font-size: em(18, 20);
+  }
 }
 
 .ordinal-letter {
@@ -446,6 +534,15 @@ li.ordinals {
   font-size: em(36, 20);
   font-weight: 700;
   padding-right: 2px;
+  @include media(max-width 695px) {
+    font-size: em(30, 20);
+  }
+  @include media(max-width 630px) {
+    font-size: em(27, 20);
+  }
+  @include media(max-width 500px) {
+    font-size: em(25, 20);
+  }
 }
 
 strong {
@@ -456,6 +553,9 @@ strong {
   margin-left: -50px;
   padding-right: 20px;
   padding-bottom: 6px;
+  @include media(max-width 500px) {
+    display: none;
+  }
 }
 
 .list a {
@@ -463,6 +563,9 @@ strong {
   text-decoration: none;
   &:hover {
     border-bottom: solid 2px $grey_text;
+    @include media(max-width 500px) { 
+      border-bottom: solid 1px tint($grey_text, 35%); 
+    }
   }
   &:visited {
     color: tint($grey_text, 35%);
