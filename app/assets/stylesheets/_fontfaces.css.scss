@@ -7,10 +7,8 @@
 
 @font-face {
     font-family: 'impactregular';
-    src: url('http://grozav.com/font/impact.ttf');
-    src: url('http://www.grozav.com/font/impact.ttf');
-    src: url('impact-webfont.eot');
-    src: url('impact-webfont.eot?#iefix') format('embedded-opentype'),
+    src: url('impact-webfont.eot'),
+         url('impact-webfont.eot?#iefix') format('embedded-opentype'),
          url('impact-webfont.woff') format('woff'),
          url('impact-webfont.ttf') format('truetype'),
          url('impact-webfont.svg#impactregular') format('svg');
