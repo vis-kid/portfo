@@ -87,10 +87,14 @@ h1 {
     padding-top: 13px;
   }
   @include media(max-width 695px) {
-    padding-left: 50px;
+    padding-left: 30px;
+  }
+  @include media(max-width 600px) {
+    padding-left: 40px;
   }
   @include media(max-width 520px) {
     @include header($weight: normal, $size: em(50, 20), $color: $grey_text);
+    padding-left: 55px;
   }
 }
 
@@ -137,7 +141,7 @@ h5, .blogger-name {
 
 .blog-tags {
   @include media(max-width 600px) {
-    @include header($weight: 200, $size: em(16, 20), $color: $red);
+    @include header($weight: 200, $size: em(18, 20), $color: $red);
   }
 }
 
@@ -146,6 +150,9 @@ h5, .blogger-name {
   }
   @include media(max-width 500px) {
     padding-top: 38px;
+  }
+  @include media(max-width 480px) {
+    padding-top: 67px;
   }
 }
 
@@ -250,7 +257,7 @@ h5, .blogger-name {
     float: left;
     padding-right: 50px;
     @include media(max-width 600px) {
-      padding-right: 20px;
+      padding-right: 10px;
     }
   }
   @include media(max-width 1000px) {
@@ -512,7 +519,7 @@ h5, .blogger-name {
     padding-left: 8px;
   }
   @include media(max-width 630px) {
-    font-size: em(18, 20);
+    font-size: em(20, 20);
   }
   @include media(max-width 500px) {
     padding-left: 16px;
