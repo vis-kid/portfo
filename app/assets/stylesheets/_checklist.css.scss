@@ -1,9 +1,21 @@
 @import "bourbon";
 @import "grid-settings";
 @import "neat";
+@import "compass";
+@import "compass/typography/vertical_rhythm";
 @import "fontfaces";
 
 // *************** VARIABLES **************
+
+
+// *************** BASELINE GRID **********
+
+$browser-default-font-size: 16px;
+$base-font-size: 25px;
+$base-line-height: 37.5px;
+$relative-font-sizing: true;
+@include establish-baseline;
+
 
 // *************** COLORS *****************
 
@@ -103,6 +115,7 @@ h2 {
   letter-spacing: -0.05em; 
   @include media(max-width 1275px) {
     @include header($weight: 700, $size: em(45, 20), $color: $grey_text);
+    padding-top: 12px;
   }
   @include media(max-width 720px) {
     @include header($weight: 600, $size: em(32, 20), $color: $grey_text);
@@ -424,6 +437,9 @@ h5, .blogger-name {
   @include span-columns(7);
   line-height: 1.5em;
   padding-top: 1.5em;
+  @include media(max-width 1275px) {
+    font-size: em(22, 20);
+  }
   @include media(max-width 1000px) {
     @include shift(2);
     @include span-columns(9);
@@ -506,6 +522,7 @@ h5, .blogger-name {
     @include shift(-0.5);
   }
   @include media(max-width 1275px) {
+    font-size: em(22, 20);
     @include shift(.52);
   }
   @include media(max-width 1000px) {
