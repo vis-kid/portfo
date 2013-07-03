@@ -329,9 +329,8 @@ h5, .blogger-name {
   @include outer-container;
   z-index: 2;
   position: absolute;
-  margin-top: 20px;
+  margin-top: -18px;
   @include media(max-width 1350px) {
-    margin-top: -18px;
   }
   @include media(max-width 1000px){
     @include shift(2);
@@ -346,7 +345,6 @@ h5, .blogger-name {
   padding-bottom: 150px;
   text-align: center;
   @include media(max-width 1350px) {
-    margin-top: 14px;
     @include span-columns(3);
   }
   @include media(max-width 1000px) {
@@ -423,7 +421,6 @@ h5, .blogger-name {
   padding-left: 12px;
   @include media(max-width 1350px) {
     @include shift(3);
-    padding-left: 0px;
   }
   @include media(max-width 1000px) {
     @include span-columns(5);
