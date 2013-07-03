@@ -148,7 +148,7 @@ h5, .blogger-name {
 }
 
 .blog-tags {
-  @include media(max-width 600px) {
+  @include media(max-width 720px) {
     @include header($weight: 200, $size: em(18, 20), $color: $red);
   }
 }
@@ -286,6 +286,9 @@ h5, .blogger-name {
     margin-top: 40px;
     padding-right: 30px;
   }
+  @include media(max-width 720px) {
+    margin-top: 51px;
+  }
 }
 
 .logo-text, .logo-icon, .date {
@@ -307,6 +310,9 @@ h5, .blogger-name {
     text-align: left;
     margin-top: 42px;
     margin-left: -10px;
+  }
+  @include media(max-width 720px) {
+    margin-top: 43px;
   }
 }
 
@@ -393,6 +399,10 @@ h5, .blogger-name {
   @include media(max-width 1000px) {
     margin-top: 71px;
   }
+  @include media(max-width 720px) {
+    margin-top: 45px;
+    padding-bottom: 8px;
+  }
   @include media(max-width 500px) {
     line-height: 1em;
   }
@@ -404,12 +414,17 @@ h5, .blogger-name {
  @include media(max-width 1275px) {
    padding-top: 5px;
   }
+ @include media(max-width 720px) {
+ }
 }
 
 .blogger-name {
   padding-top: 13px;
   @include media(max-width 1275px) {
     padding-top: 7px;
+  }
+  @include media(max-width 720px) {
+    padding-top: 11px;
   }
 }
 
@@ -434,22 +449,17 @@ h5, .blogger-name {
 }
 
 .homer-icon {
-  
   @include media(max-width 1275px) {
   }
   @include media(max-width 1000px) {
-    @include span-columns(7);
     @include shift(-1.35);
   }
   @include media(max-width 855px) {
-    @include span-columns(8);
     @include shift(-2.7);
   }
   @include media(max-width 720px) {
-    @include span-columns(8);
   }
   @include media(max-width 500px) {
-    @include span-columns(10);
   }
 }
 
@@ -470,7 +480,7 @@ h5, .blogger-name {
     @include shift(-1.17);
   }
   @include media(max-width 720px) {
-    margin-top: 200px;
+    margin-top: 208px;
   }
 }
 
@@ -509,6 +519,10 @@ h5, .blogger-name {
     padding-left: 10px;
     text-align: left;
   }
+  @include media(max-width 720px) {
+    margin-top: -69px;
+    padding-left: 10px;
+  }
   @include media(max-width 500px) {
     margin-top: -85px;
   }
@@ -528,10 +542,13 @@ h5, .blogger-name {
   }
   @include media(max-width 1000px) {
     @include shift(.95);
-    margin-top: 58px;
+    margin-top: 52px;
   }
   @include media(max-width 855px) {
     @include shift(-.17);
+  }
+  @include media(max-width 720px) {
+    margin-top: 44px;
   }
 }
 
@@ -541,6 +558,9 @@ h5, .blogger-name {
   line-height: 3.6em;
   @include media(max-width 1275px) {
     line-height: 3.1em;
+  }
+  @include media(max-width 720px) {
+    line-height: 2.8em;
   }
 }
 
@@ -585,8 +605,8 @@ h5, .blogger-name {
   @include media(max-width 1000px) {
     @include shift(1.16);
   }
-  @include media(max-width 775px) {
-    font-size: em(22, 20);   
+  @include media(max-width 720px) {
+    font-size: em(20, 20);   
   }
   @include media(max-width 695px) {
     font-size: em(20, 20);
@@ -609,8 +629,8 @@ li.ordinals {
   @include media(max-width 1350px) {
     padding-top: -1px;
   }
-  @include media(max-width 500px) {
-    font-size: em(18, 20);
+  @include media(max-width 720px) {
+    font-size: em(20, 20);
   }
 }
 
@@ -620,13 +640,6 @@ li.ordinals {
   font-weight: 700;
   padding-right: 2px;
   @include media(max-width 695px) {
-    font-size: em(30, 20);
-  }
-  @include media(max-width 630px) {
-    font-size: em(27, 20);
-  }
-  @include media(max-width 500px) {
-    font-size: em(25, 20);
   }
 }
 
