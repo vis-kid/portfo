@@ -250,6 +250,9 @@ h5, .blogger-name {
   margin-top: -22px;
   @include media(max-width 1350px) {
   }
+  @include media(max-width 1275px) {
+    margin-top: -17px;
+  }
   @include media(max-width 1000px) {
     @include shift(2);
   }
@@ -424,6 +427,7 @@ h5, .blogger-name {
   //}
   @include media(max-width 1350px) {
     @include shift(3);
+    padding-left: 12px;
   }
 }
 
@@ -518,7 +522,7 @@ h5, .blogger-name {
     margin-top: 38px;
   }
   @include media(max-width 1275px) {
-    margin-top: 345px;
+    margin-top: 18px;
   }
   @include media(max-width 1000px) {
     @include shift(.95);
