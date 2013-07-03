@@ -392,12 +392,15 @@ h5, .blogger-name {
 
 .homer-background {
   @include outer-container;
+  z-index: 2;
+  position: absolute;
+  margin-left: 215px;
   margin-top: 45px;
 }
 
 .homer-icon {
-  @include span-columns(4);
-  @include shift(4);
+  @include span-columns(10);
+  @include shift(6);
   padding-left: 12px;
   @include media(max-width 1350px) {
     @include shift(3);
@@ -456,7 +459,7 @@ h5, .blogger-name {
 
 .date {
   @include span-columns(4);
-  margin-top: 50px;
+  margin-top: 51px;
   @include media(max-width 1350px) {
     @include span-columns(3);
   }
@@ -477,7 +480,7 @@ h5, .blogger-name {
 //*************** FOURTH BLOCK **********
 
 .fourth-block {
-  margin-top: 39px;
+  margin-top: 323px;
   @include media(max-width 1000px) {
     @include shift(.95);
     margin-top: 60px;
