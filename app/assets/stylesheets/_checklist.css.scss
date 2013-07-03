@@ -247,7 +247,7 @@ h5, .blogger-name {
 
 .first-line {
   @include outer-container;
-  padding-top: 16px;
+  margin-top: -22px;
   @include media(max-width 1350px) {
   }
   @include media(max-width 1000px) {
@@ -332,6 +332,10 @@ h5, .blogger-name {
   margin-top: -18px;
   @include media(max-width 1350px) {
   }
+  @include media(max-width 1275px) {
+    margin-top: -36px;
+  }
+  
   @include media(max-width 1000px){
     @include shift(2);
   }
@@ -391,14 +395,16 @@ h5, .blogger-name {
 .subtitle {
  margin-bottom: 0.5em;
  color: $red;
- @include media(max-width 1350px) {
+ @include media(max-width 1275px) {
+   padding-top: 5px;
   }
 }
 
 .blogger-name {
   padding-top: 13px;
   margin-left: 5px;
-  @include media(max-width 1350px) {
+  @include media(max-width 1275px) {
+    padding-top: 7px;
   }
 }
 
@@ -409,18 +415,21 @@ h5, .blogger-name {
 
 .homer-background {
   @include outer-container;
-  z-index: 2;
-  position: absolute;
-  margin-left: 215px;
+  @include shift(4);
+  //margin-left: 215px;
   margin-top: 45px;
+  padding-left: 10px;
+  //@include media(min-width 1360px) {
+  //  @include shift(3.3);
+  //}
+  @include media(max-width 1350px) {
+    @include shift(3);
+  }
 }
 
 .homer-icon {
-  @include span-columns(10);
-  @include shift(6);
-  padding-left: 12px;
-  @include media(max-width 1350px) {
-    @include shift(3);
+  
+  @include media(max-width 1275px) {
   }
   @include media(max-width 1000px) {
     @include span-columns(5);
@@ -448,7 +457,8 @@ h5, .blogger-name {
   z-index: 2;
   position: relative;
   margin-top: 264px;
-  @include media(max-width 1350px) {
+  @include media(max-width 1275px) {
+    margin-top: 230px;
   }
   @include media(max-width 855px) {
     @include shift(-1.17);
@@ -483,6 +493,9 @@ h5, .blogger-name {
   @include media(max-width 1350px) {
     @include span-columns(3);
   }
+  @include media(max-width 1275px) {
+    margin-top: 41px;
+  }
   @include media(max-width 1000px) {
     @include span-columns(4);
     @include shift(2);
@@ -500,9 +513,12 @@ h5, .blogger-name {
 //*************** FOURTH BLOCK **********
 
 .fourth-block {
-  margin-top: 323px;
+  margin-top: 40px;
   @include media(max-width 1350px) {
-    margin-top: 359px;
+    margin-top: 38px;
+  }
+  @include media(max-width 1275px) {
+    margin-top: 345px;
   }
   @include media(max-width 1000px) {
     @include shift(.95);
@@ -517,7 +533,8 @@ h5, .blogger-name {
   @include outer-container;
 //  margin-bottom: 35px;
   line-height: 3.6em;
-  @include media(max-width 1350px) {
+  @include media(max-width 1275px) {
+    line-height: 3.1em;
   }
 }
 
@@ -614,6 +631,9 @@ strong {
   margin-left: -50px;
   padding-right: 20px;
   padding-bottom: 6px;
+  @include media(max-width 1275px) {
+    margin-left: -57px;
+  }
   @include media(max-width 500px) {
     display: none;
   }
