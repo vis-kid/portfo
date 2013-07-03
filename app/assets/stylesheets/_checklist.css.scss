@@ -557,6 +557,7 @@ h5, .blogger-name {
   margin-left: -11px;
   @include media(max-width 1000px) {
     @include span-columns(12);
+    margin-left: -5px;
   }
 }
 
