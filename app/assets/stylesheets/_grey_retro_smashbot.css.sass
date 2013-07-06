@@ -1,0 +1,106 @@
+@import "bourbon"
+@import "grid-settings"
+@import "neat"
+@import "fontfaces"
+@import "compass"
+
+//******************** SPRITES **************
+
+$grey-spacing:20px
+@import "grey/*.png"
+
++all-grey-sprites(Navbar-background)
++all-grey-sprites(Red-star)
++all-grey-sprites(Robo-badge)
++all-grey-sprites(Tools-badge)
++all-grey-sprites(Welcome)
++all-grey-sprites(small-red-bar)
++all-grey-sprites(medium-red-bar)
++all-grey-sprites(large-red-bar)
++all-grey-sprites(top-text)
+//******************** BACKGROUND ***********
+
+
+.background 
+  +background-image(url('grey/grey-background.jpg'))
+  background-repeat:repeat
+
+
+//******************** FIRST LINE ***********
+
+.grey-first-line 
+  +outer-container
+  margin-top: 10px
+
+
+.grey-Navbar-background
+  +span-columns(12)
+  margin-left: 130px
+
+
+//******************** SECOND LINE ***********
+
+.grey-second-line
+  +outer-container
+
+.grey-Red-star
+  +outer-container
+  +span-columns(1)
+  margin-left: 659px
+  margin-top: 31px
+
+
+//******************** THIRD LINE ************
+
+.grey-third-line
+  +outer-container
+
+.grey-small-red-bar
+  +span-columns(3)
+  margin-top: 68px
+  margin-left: 202px
+
+.grey-Welcome
+  +span-columns(3)
+  margin-top: -45px
+  margin-left: 577px
+
+.right 
+  margin-top: -29px
+  margin-left: 857px
+
+//********************* FOURTH LINE **********
+
+.grey-fourth-line
+  +outer-container
+
+.grey-Robo-badge, .grey-Tools-badge
+  +span-columns(1.85)
+  margin-top: 64px
+
+.grey-Robo-badge
+  +omega
+  margin-left: 200px
+
+.grey-top-text
+  +span-columns(5.25)
+  +omega
+  margin-top: 65px
+
+.grey-Tools-badge
+  +omega
+
+.grey-Robo-badge, .grey-top-text
+  margin-right: 5px
+
+
+//********************* FIFTH LINE **********
+
+.grey-fifth-line
+  +outer-container
+
+.grey-medium-red-bar
+  +span-columns(6)
+  margin-top: 86px
+  margin-left: 386px
+
