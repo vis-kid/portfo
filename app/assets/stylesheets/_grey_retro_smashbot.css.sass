@@ -18,8 +18,10 @@ $grey-spacing:20px
 +all-grey-sprites(medium-red-bar)
 +all-grey-sprites(large-red-bar)
 +all-grey-sprites(top-text)
-//******************** BACKGROUND ***********
++all-grey-sprites(first-header)
++all-grey-sprites(slider)
 
+//******************** BACKGROUND ***********
 
 .background 
   +background-image(url('grey/grey-background.jpg'))
@@ -56,7 +58,6 @@ $grey-spacing:20px
   +outer-container
 
 .grey-small-red-bar
-  +span-columns(3)
   margin-top: 68px
   margin-left: 202px
 
@@ -66,7 +67,7 @@ $grey-spacing:20px
   margin-left: 577px
 
 .right 
-  margin-top: -29px
+  margin-top: -7px
   margin-left: 857px
 
 //********************* FOURTH LINE **********
@@ -75,24 +76,27 @@ $grey-spacing:20px
   +outer-container
 
 .grey-Robo-badge, .grey-Tools-badge
-  +span-columns(1.85)
+  +span-columns(1.9)
   margin-top: 64px
 
 .grey-Robo-badge
+  +outer-container
   +omega
   margin-left: 200px
-  margin-right: 10px
+  margin-right: 4px
 
 .grey-top-text
+  +outer-container
   +span-columns(5.25)
   +omega
   margin-top: 65px
 
 .grey-Tools-badge
+  +outer-container
   +omega
+  margin-left: 2px
 
 .grey-top-text
-  margin-right: 5px
 
 
 //********************* FIFTH LINE **********
@@ -101,7 +105,77 @@ $grey-spacing:20px
   +outer-container
 
 .grey-medium-red-bar
-  +span-columns(6)
   margin-top: 86px
   margin-left: 386px
+
+//********************** SIXTH LINE *********
+
+.grey-sixth-line
+  +outer-container
+  margin-top: 82px
+  margin-left: 338px
+
+//********************** SEVENTH LINE *******
+
+.grey-seventh-line
+  +outer-container
+  margin-top: 65px
+  margin-left: 287px
+
+//*********************** EIGHT LINE ********
+
+.grey-eight-line
+  +outer-container
+
+
+//*********************** NINTH LINE ********
+
+.grey-ninth-line
+  +outer-container
+
+.grey-button
+  margin-left: 520px
+  margin-top: 65px
+
+//*********************** TENTH LINE ********
+
+
+
+.grey-tenth-line
+  +outer-container
+  margin-top: 65px
+  margin-left: 232px
+
+
+//*********************** ELEVENTH LINE ******
+
+.grey-eleventh-line
+  +outer-container
+  margin-top: 65px
+  margin-left: 419px
+
+//*********************** TWELFTH LINE ******
+
+.grey-twelfth-line
+  +outer-container
+  margin-top: 65px
+  margin-left: 231px
+
+//*********************** 13TH LINE ******
+
+.grey-13th-line
+  +outer-container
+  margin-top: 32px
+  margin-left: 225px
+
+.footer
+  +background-image(url('grey/footer-background.jpg'))
+  background-repeat:repeat
+  margin-top: 32px
+  height: 20px
+  width: auto
+
+.grey-copyright-text
+  padding-top: 10px
+  margin-left: 220px
 
