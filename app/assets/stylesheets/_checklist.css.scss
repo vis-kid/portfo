@@ -161,7 +161,6 @@ h5, .blogger-name {
     padding-top: 38px;
   }
   @include media(max-width 480px) {
-    padding-top: 67px;
   }
 }
 
@@ -599,7 +598,6 @@ h5, .blogger-name {
   }
   @include media(max-width 520px) {
     margin-top: 36px;
-    @include shift(.02);
   }
 }
 
@@ -683,7 +681,6 @@ h5, .blogger-name {
     @include shift(.95);    
   }
   @include media(max-width 500px) {
-    padding-left: 16px;
   }
 }
 
