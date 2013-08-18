@@ -9,7 +9,7 @@ $grey_text: #343434;
   border-bottom: solid 1px $color;
 }
 
-@mixin header-styles($weight, $size, $color) {
+@mixin header-styles($weight, $size, $color: $grey_text) {
 	font: {
     weight: $weight;
     size: $size;
@@ -26,7 +26,6 @@ $grey_text: #343434;
 
 .blog-tags {
   height: 50px;
-	background-color: yellow;
 }
 
 .blogger-name, .logo-text, .blog-tags, .italics {
@@ -104,17 +103,17 @@ h2, h3, h5, .blogger-name {
 
 h1 {
   font-family: Impact, Source Sans Pro, Sans-Serif; 
-  @include header-styles($weight: normal, $size: em(72, 20), $color: $grey_text);
+  @include header-styles($weight: normal, $size: em(72, 20));
   @include span-columns(4);
 
-//******************* h1 Media Queries *******
+//*** Media Queries *******
 
   @include media(max-width 1350px) {
     @include span-columns(3);
   }
 
   @include media(max-width 1275px) {
-    @include header-styles($weight: normal, $size: em(60, 20), $color: $grey_text);
+    @include header-styles($weight: normal, $size: em(60, 20));
     padding-top: 13px;
   }
 
@@ -130,7 +129,8 @@ h1 {
     padding-left: 55px;
   }
 
-//******************* /h1 Media Queries *******
+//*** /Media Queries *******
+
 }
 
 
@@ -138,25 +138,26 @@ h1 {
 //****************** h2 *************
 
 h2 {
-  @include header-styles($weight: 700, $size: em(53, 20), $color: $grey_text);
+  @include header-styles($weight: 700, $size: em(53, 20));
   letter-spacing: -0.05em; 
 
-//******************* h2 Media Queries *******
+//*** Media Queries *******
 
   @include media(max-width 1275px) {
-    @include header-styles($weight: 700, $size: em(45, 20), $color: $grey_text);
+    @include header-styles($weight: 700, $size: em(45, 20));
     padding-top: 12px;
   }
 
   @include media(max-width 720px) {
-    @include header-styles($weight: 600, $size: em(32, 20), $color: $grey_text);
+    @include header-styles($weight: 600, $size: em(32, 20));
   }
 
   @include media(max-width 520px) {
-    @include header-styles($weight: 500, $size: em(31, 20), $color: $grey_text);
+    @include header-styles($weight: 500, $size: em(31, 20));
   }
 
-//******************* /h2 Media Queries *******
+//*** /Media Queries *******
+
 }
 
 
@@ -167,28 +168,33 @@ h3 {
   @include header-styles($weight: 300, $size: em(40, 20), $color: $red);
   letter-spacing: -0.04em;
 
-//******************* h3 Media Queries *******
+//*** Media Queries *******
 
   @include media(max-width 1275px) {
     @include header-styles($weight: 300, $size: em(35, 20), $color: $red);
   }
 
   @include media(max-width 720px) {
-    @include header-styles($weight: 300, $size: em(30, 20), $color: $grey_text);
+    @include header-styles($weight: 300, $size: em(30, 20));
   }
 
   @include media(max-width 520px) {
-    @include header-styles($weight: 300, $size: em(27, 20), $color: $grey_text);
+    @include header-styles($weight: 300, $size: em(27, 20));
     padding-top: 10px;
   }
 
-//******************* /h3 Media Queries *******
+//*** /Media Queries *******
+
 }
 
 
 
 
 //******************* MISC ******************
+
+strong {
+  font-weight: bold;
+}
 
 .italics {
   font-style: italic;
@@ -197,7 +203,6 @@ h3 {
 .blog-tags, .title, .subtitle, .blogger-name, .blog-text {
   padding-left: 10px;
 }
-
 
 h5 {
   @include header-styles($weight: 200, $size: em(25, 20), $color: $red);
@@ -223,6 +228,10 @@ h5 {
 }
 
 .blogger-name {
+	& a {
+	  text-decoration: none;
+		color: $grey_text;
+	}
 
 //*** Media Queries *******
 
@@ -270,8 +279,6 @@ h5 {
     size: em(40, 20);
 	}
 }
-
-
 
 
 // *********** CONTENT LINES *********
@@ -338,6 +345,7 @@ h5 {
   }
 
 //*** /Media Queries *******
+
 }
 
 .logo-text, .logo-icon, .date {
@@ -458,8 +466,11 @@ h5 {
 
 .title, .subtitle, .blogger-name {
   @include span-columns(7);
-  color: $grey_text;
   line-height: 1.5em;
+}
+
+.title, .subtitle {
+  color: $grey_text;
 
 //*** Media Queries *******
 
@@ -476,7 +487,7 @@ h5 {
 }
 
 .blogger-name {
-  @include header-styles($weight: 200, $size: em(25, 20), $color: $grey_text);
+  @include header-styles($weight: 200, $size: em(25, 20));
   padding-top: 13px;
 
 //*** Media Queries *******
@@ -650,7 +661,6 @@ h5 {
 .homer-background {
   @include outer-container;
   @include shift(4);
-  //margin-left: 215px;
   margin-top: 45px;
   padding-left: 10px;
 
@@ -673,18 +683,12 @@ h5 {
 
 //*** Media Queries *******
 
-  @include media(max-width 1275px) {
-  }
-
   @include media(max-width 1000px) {
     @include shift(-1.35);
   }
 
   @include media(max-width 855px) {
     @include shift(-2.7);
-  }
-
-  @include media(max-width 720px) {
   }
 
   @include media(max-width 520px) {
@@ -748,9 +752,6 @@ h5 {
     line-height: 3.1em;
   }
 
-  @include media(max-width 1000px) {
-  }
-
   @include media(max-width 720px) {
     line-height: 2.8em;
   }
@@ -789,25 +790,17 @@ h5 {
   @include span-columns(8);
   margin-left: -11px;
 
-//*** Media Queries *******
-
   @include media(max-width 1000px) {
     @include span-columns(12);
     margin-left: -5px;
   }
-
-  @include media(max-width 625px) {
-  }
-
-//*** Media Queries *******
-
 }
 
 .ordinal, .text_row {
   font-family: 'DroidSerif'; 
 }
 
-.ordinal, .big_ordinal_digit, .text_row {
+.ordinal, .text_row, .big_ordinal_digit {
   color: $grey_text;
 }
 
@@ -818,6 +811,8 @@ h5 {
     left: 10px;
     top: 2px;
 	}
+
+//*** Media Queries *******
 
   @include media(max-width 1350px) {
     padding-top: 4px;
@@ -849,6 +844,9 @@ h5 {
   @include media(max-width 625px) {
     @include shift(.95);    
   }
+
+//*** /Media Queries *******
+
 }
 
 li.ordinal {
@@ -860,6 +858,8 @@ li.ordinal {
     size: em(20, 20);
 	}
 
+//*** Media Queries *******
+
   @include media(max-width 1350px) {
     padding-top: -1px;
   }
@@ -867,6 +867,9 @@ li.ordinal {
   @include media(max-width 720px) {
     font-size: em(20, 20);
   }
+
+//*** /Media Queries *******
+
 }
 
 .big_ordinal_digit {
@@ -876,13 +879,6 @@ li.ordinal {
     size: em(36, 20);
     weight: 700;
 	}
-
-  @include media(max-width 695px) {
-  }
-}
-
-strong {
-  font-weight: bold;
 }
 
 .red-line {
@@ -891,6 +887,8 @@ strong {
     right: 20px;
     bottom: 6px;
 	}
+
+//*** Media Queries *******
 
   @include media(max-width 1275px) {
     margin-left: -53px;
@@ -904,6 +902,9 @@ strong {
   @include media(max-width 400px) {
     @include shift(-2.1);
   }
+
+//*** /Media Queries *******
+
 }
 
 .text_row a {
