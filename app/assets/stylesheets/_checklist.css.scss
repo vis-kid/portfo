@@ -192,6 +192,10 @@ h3 {
 
 //******************* MISC ******************
 
+h5 {
+  @include header-styles($weight: 200, $size: em(25, 20), $color: $red);
+}
+
 strong {
   font-weight: bold;
 }
@@ -204,10 +208,6 @@ strong {
   padding-left: 10px;
 }
 
-h5 {
-  @include header-styles($weight: 200, $size: em(25, 20), $color: $red);
-}
-
 .blogger-name, .date  {
   @include media(max-width 720px) {
     @include header-styles($weight: 200, $size: em(20, 20), $color: $red);
@@ -215,50 +215,8 @@ h5 {
   }
 }
 
-.blog-tags {
-  @include media(max-width 720px) {
-    @include header-styles($weight: 200, $size: em(18, 20), $color: $red);
-  }
-}
 
-.date  {
-  @include media(max-width 500px) {
-    padding-top: 38px;
-  }
-}
 
-.blogger-name {
-	& a {
-	  text-decoration: none;
-		color: $grey_text;
-	}
-
-//*** Media Queries *******
-
-  @include media(max-width 1275px) {
-    @include shift(.05);
-  }
-
-  @include media(max-width 1000px) {
-    @include shift(.02);
-    margin-top: 33px;
-  }
-
-  @include media(max-width 720px) {
-    margin-top: 30px;
-  }
-
-  @include media(max-width 625px) {
-    padding-left: 2px;
-  }
-
-  @include media(max-width 500px) {
-    padding-top: 10px;
-  }
-
-//*** /Media Queries *******
-
-}
 
 
 //******************** PARAGRAPH ************
@@ -320,6 +278,10 @@ h5 {
   margin-top: 108px; 
 
 //*** Media Queries *******
+
+  @include media(max-width 720px) {
+    @include header-styles($weight: 200, $size: em(18, 20), $color: $red);
+  }
 
   li {
     float: left;
@@ -489,19 +451,38 @@ h5 {
 .blogger-name {
   @include header-styles($weight: 200, $size: em(25, 20));
   padding-top: 13px;
+	& a {
+	  text-decoration: none;
+		color: $grey_text;
+	}
 
 //*** Media Queries *******
 
   @include media(max-width 1275px) {
+    @include shift(.05);
     padding-top: 7px;
   }
 
+  @include media(max-width 1000px) {
+    @include shift(.02);
+    margin-top: 33px;
+  }
+
   @include media(max-width 720px) {
+    margin-top: 30px;
     padding-top: 11px;
+  }
+
+  @include media(max-width 625px) {
+    padding-left: 2px;
   }
 
   @include media(max-width 520px) {
     padding-top: 13px;
+  }
+
+  @include media(max-width 500px) {
+    padding-top: 10px;
   }
 
 //*** /Media Queries *******
@@ -648,6 +629,10 @@ h5 {
 
   @include media(max-width 625px) {
     padding-left: 10px;
+  }
+
+  @include media(max-width 500px) {
+    padding-top: 38px;
   }
 
 //*** /Media Queries *******
