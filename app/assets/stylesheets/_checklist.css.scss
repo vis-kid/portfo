@@ -216,29 +216,6 @@ strong {
 }
 
 
-
-
-
-//******************** PARAGRAPH ************
-
-.blog-text {
-  color: $grey_text;
-	font: {
-    family: 'DroidSerif',Georgia, Cambria, Serif;
-    weight: normal;
-    size: em(25, 20);
-	}
-}
-
-.capital_letter {
-	font: {
-    family: Source Sans Pro;
-    weight: 700;
-    size: em(40, 20);
-	}
-}
-
-
 // *********** CONTENT LINES *********
 // Aligned content from top to bottom
 //************************************
@@ -448,9 +425,10 @@ strong {
 
 }
 
+
 .blogger-name {
   @include header-styles($weight: 200, $size: em(25, 20));
-  padding-top: 13px;
+  padding-top: 6px;
 	& a {
 	  text-decoration: none;
 		color: $grey_text;
@@ -460,29 +438,25 @@ strong {
 
   @include media(max-width 1275px) {
     @include shift(.05);
-    padding-top: 7px;
+    padding-top: 4px;
   }
 
   @include media(max-width 1000px) {
     @include shift(.02);
-    margin-top: 33px;
+    margin-top: -10px;
   }
 
   @include media(max-width 720px) {
-    margin-top: 30px;
     padding-top: 11px;
   }
 
   @include media(max-width 625px) {
-    padding-left: 2px;
   }
 
   @include media(max-width 520px) {
-    padding-top: 13px;
   }
 
   @include media(max-width 500px) {
-    padding-top: 10px;
   }
 
 //*** /Media Queries *******
@@ -527,10 +501,11 @@ strong {
 //*** Media Queries *******
 
  @include media(max-width 1275px) {
-   padding-top: 5px;
+   padding-top: 10px;
   }
 
- @include media(max-width 720px) {
+ @include media(max-width 1000px) {
+	 padding-top: 10px;
  }
 
  @include media(max-width 520px) {
@@ -574,10 +549,24 @@ strong {
 
 }
 
+.capital_letter {
+	font: {
+    family: Source Sans Pro;
+    weight: 700;
+    size: em(40, 20);
+	}
+}
+
 .blog-text {
   @include span-columns(7);
   line-height: 1.52em;
   padding-top: 1.5em;
+  color: $grey_text;
+	font: {
+    family: 'DroidSerif',Georgia, Cambria, Serif;
+    weight: normal;
+    size: em(25, 20);
+	}
 
 //*** Media Queries *******
 
@@ -588,12 +577,16 @@ strong {
   @include media(max-width 1000px) {
     @include span-columns(9);
     @include shift(2);
-    margin-top: 32px;
+    margin-top: 12px;
   }
 
   @include media(max-width 720px) {
     font-size: em(20, 20);
-    margin-top: 0px; 
+    margin-top: -3px; 
+  }
+
+  @include media(max-width 520px) {
+    margin-top: -17px; 
   }
 
 //*** /Media Queries *******
@@ -617,22 +610,22 @@ strong {
   @include media(max-width 1000px) {
     @include span-columns(4);
     @include shift(2);
-    margin-top: -24px;
+    margin-top: 1px;
     padding-left: 10px;
     text-align: left;
   }
 
   @include media(max-width 720px) {
-    margin-top: -69px;
+    margin-top: -42px;
     padding-left: 10px;
   }
 
   @include media(max-width 625px) {
-    padding-left: 10px;
+		margin-top: -43px;
   }
 
-  @include media(max-width 500px) {
-    padding-top: 38px;
+  @include media(max-width 520px) {
+		margin-top: -53px;
   }
 
 //*** /Media Queries *******
@@ -896,7 +889,7 @@ li.ordinal {
   color: $grey_text;
   text-decoration: none;
   &:hover {
-    border-bottom: solid 2px $grey_text;
+    border-bottom: solid 1px $grey_text;
 
     @include media(max-width 500px) { 
       border-bottom: solid 1px tint($grey_text, 35%); 
@@ -905,7 +898,7 @@ li.ordinal {
   &:visited {
     color: tint($grey_text, 35%);
     &:hover {
-      border-bottom: solid 2px tint($grey_text, 35%);
+      border-bottom: solid 1px tint($grey_text, 35%);
     }
   }
 }
